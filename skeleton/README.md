@@ -1,12 +1,6 @@
-# Welcome to News Reader Demo
+## Welcome to New.read.er
 
-* bundle install
-* rake db:migrate
-* rake db:seed
+Follow all of your favorite RSS feeds!
 
-Three feeds with their entries will be created upon running `rake
-db:seed`.
-
-Good luck. Have fun.
-
-
+## Technologies
+* Backbone.js with Ruby on Rails API
