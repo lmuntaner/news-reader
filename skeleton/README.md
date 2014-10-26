@@ -1,3 +1,5 @@
+# w7d3: [NewsReader][description]
+
 [Live Demo](http://aa-newsreader.herokuapp.com/)
 
 # Welcome to News Reader Demo
@@ -11,4 +13,4 @@ db:seed`.
 
 Good luck. Have fun.
 
-
+[description]: https://github.com/appacademy/backbone-curriculum/blob/master/projects/w7d3-news-reader.md
