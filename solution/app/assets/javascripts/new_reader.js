@@ -20,5 +20,3 @@ window.NewReader = {
         Backbone.history.start();
     }
 };
-// boot the app when the document is ready
-$(NewReader.initialize);
