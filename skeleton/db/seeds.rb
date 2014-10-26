@@ -5,8 +5,6 @@
 #
 #   cities = City.create([{ name: 'Chicago' }, { name: 'Copenhagen' }])
 #   Mayor.create(name: 'Emanuel', city: cities.first)
-#
-#
 
 urls = [
   'http://lorem-rss.herokuapp.com/feed?unit=second&interval=10',

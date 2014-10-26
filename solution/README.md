@@ -1,6 +1,16 @@
-## Welcome to New.read.er
+# w7d3: [NewsReader][description]
 
-Follow all of your favorite RSS feeds!
+* [Live Demo](http://aa-newsreader.herokuapp.com/)
 
-## Technologies
-* Backbone.js with Ruby on Rails API
+To run locally:
+
+* bundle install
+* rake db:migrate
+* rake db:seed
+
+Three feeds with their entries will be created upon running `rake
+db:seed`.
+
+Good luck. Have fun!
+
+[description]: https://github.com/appacademy/backbone-curriculum/blob/master/projects/w7d3-news-reader.md
