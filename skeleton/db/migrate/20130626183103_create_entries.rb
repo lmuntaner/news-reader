@@ -11,6 +11,5 @@ class CreateEntries < ActiveRecord::Migration
       t.timestamps
     end
     add_index :entries, :feed_id
-    add_index :entries, :guid, unique: true
   end
 end

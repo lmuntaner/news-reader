@@ -28,7 +28,6 @@ ActiveRecord::Schema.define(version: 20140110005108) do
   end
 
   add_index "entries", ["feed_id"], name: "index_entries_on_feed_id", using: :btree
-  add_index "entries", ["guid"], name: "index_entries_on_guid", unique: true, using: :btree
 
   create_table "feeds", force: true do |t|
     t.string   "url",        null: false
