@@ -51,6 +51,10 @@ ul {
   padding-right: 50px;
 }
 
+#sidebar form {
+  padding-left: 40px;
+}
+
 #content {
   overflow: auto;
 }

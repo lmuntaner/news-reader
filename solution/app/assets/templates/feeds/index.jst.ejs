@@ -1,8 +1,4 @@
-<% feeds.each(function (feed) { %>
-  <li>
-    <a href="#/feeds/<%=feed.id%>"><%= feed.escape("title") %></a>
-  </li>
-<% }); %>
+<ul class="feeds-index"></ul>
 
 <form>
   <input class="add-feed" type="text" name="feed[url]">

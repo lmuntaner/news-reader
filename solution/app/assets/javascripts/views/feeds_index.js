@@ -1,10 +1,20 @@
-NewReader.Views.FeedsIndex = Backbone.View.extend({
+NewReader.Views.FeedsIndex = Backbone.CompositeView.extend({
   template: JST['feeds/index'],
-  tagName: 'ul',
-  className: 'feeds-index',
 
   initialize: function() {
+    this.listenTo(this.collection, 'add', this.addFeedSubview);
     this.listenTo(this.collection, 'sync add', this.render);
+    var view = this;
+    this.collection.each(function (feed) {
+      view.addFeedSubview(feed);
+    });
+  },
+  
+  addFeedSubview: function(feed) {
+    var feedListItem = new NewReader.Views.FeedListItem({
+      model: feed
+    });
+    this.addSubview("ul.feeds-index", feedListItem);
   },
 
   events: {
@@ -13,9 +23,9 @@ NewReader.Views.FeedsIndex = Backbone.View.extend({
 
   render: function() {
     var that = this;
-    that.$el.html(that.template({
-      feeds: that.collection
-    }));
+    that.$el.html(that.template());
+    this.attachSubviews();
+    
     return this;
   },
 
